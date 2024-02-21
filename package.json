@@ -1,0 +1,53 @@
+{
+  "name": "steam-card",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@8.7.5",
+  "description": "⚡ Generate Your Steam Profile Card Quickly/快速生成你的Steam资料卡片⚡",
+  "author": "yuyinws",
+  "license": "MIT",
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "build": "node -v && nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint . --fix",
+    "postinstall": "nuxi prepare",
+    "generate": "nuxi generate",
+    "update:deps": "taze major -w"
+  },
+  "dependencies": {
+    "@nuxt/ui": "npm:@nuxt/ui-edge@latest",
+    "atropos": "1.0.2",
+    "cheerio": "1.0.0-rc.12",
+    "openid": "^2.0.10",
+    "sass": "^1.69.5",
+    "uuid": "^9.0.1",
+    "vue-sonner": "^1.0.2",
+    "vue3-marquee": "^4.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.1.1",
+    "@iconify/json": "^2.2.149",
+    "@nuxt/devtools": "^1.0.4",
+    "@nuxt/image": "1.1.0",
+    "@nuxtjs/i18n": "8.0.0-rc.5",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.1",
+    "@types/openid": "^2.0.5",
+    "@types/uuid": "^9.0.7",
+    "@vueuse/core": "^10.6.1",
+    "@vueuse/nuxt": "^10.6.1",
+    "eslint": "^8.54.0",
+    "lodash": "^4.17.21",
+    "nuxt": "^3.8.2",
+    "pinia": "^2.1.7",
+    "taze": "^0.12.3",
+    "typescript": "^5.3.2",
+    "unplugin-turbo-console": "^1.1.2"
+  }
+}
